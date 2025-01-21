@@ -1,0 +1,32 @@
+nav.flexs {
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 5% 0;
+}
+
+.left-nav {
+  gap: 2rem;
+}
+
+.left-nav ul {
+  gap: 1rem;
+  list-style: none;
+  font-size: var(--nav-size);
+}
+
+.left-nav ul a {
+  text-decoration: none;
+  color: var(--nav-color);
+}
+
+.right-nav {
+  gap: 1rem;
+}
+
+.right-nav .flexs:nth-child(1) {
+  gap: 0.5rem;
+  font-size: var(--nav-size);
+  color: #0369a1;
+}
+
+

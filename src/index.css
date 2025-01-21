@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.flexs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+:root {
+  --nav-color: #0f172a;
+  --nav-size: 1.2rem;
+}
+
+button {
+  border: none;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

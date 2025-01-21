@@ -1,0 +1,9 @@
+button.quote {
+  width: 206px;
+  height: 48px;
+  border-radius: 100px;
+  color: #78350f;
+  background-color: #FCD34D;
+   font-size: var(--nav-size);
+   gap: 0.8rem;
+}
