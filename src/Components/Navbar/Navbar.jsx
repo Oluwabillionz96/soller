@@ -31,7 +31,7 @@ const Navbar = () => {
           <img src={headPhone} alt="head phone icon" />
           <p>555 818 282</p>
         </div>
-        <Quote />
+        <Quote disappear/>
         <img src={mobileNav} alt="mobile navigation icon" className="mobile" />
       </div>
     </nav>

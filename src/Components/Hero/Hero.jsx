@@ -1,17 +1,18 @@
 import Quote from "../Quote/Quote";
 import testifier from "../../assets/testifier.jpg";
 import "./hero.css";
+import contractor from "../../assets/solar-man.png";
 
 const Hero = () => {
   return (
-    <section className="hero-section">
+    <section className="hero-section flexs">
       <div>
         <h1>Get the Sun to Power Your Home</h1>
         <p className="details">
           Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra
           orci dui consequat turpis scelerisque.
         </p>
-        <Quote disappear="stay" />
+        <Quote />
         <div className="testimonial">
           <p className="testimony">
             “Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra
@@ -26,7 +27,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flexs">
+      <div className="hero-image">
+        <div class="custom-shape flexs">
+          <img src={contractor} alt="a solar panel contractor image working." />
+        </div>
       </div>
     </section>
   );

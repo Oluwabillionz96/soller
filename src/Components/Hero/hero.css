@@ -1,11 +1,82 @@
-
-
 .testifier {
   object-fit: cover;
   width: 64px;
   aspect-ratio: 1;
   border-radius: 50%;
 }
+.hero-section {
+  height: 706px;
+}
 
- 
+h1 {
+  font-size: 4.5rem;
+  width: 600px;
+}
 
+.details {
+  width: 600px;
+  font-size: 1.6rem;
+  margin: 24px 0;
+}
+
+.hero-section button.flexs {
+  margin-bottom: 128px;
+}
+
+.hero-section div:nth-child(1)  {
+  padding: 44px 0 0 80px;
+  /* height: 600px; */
+}
+
+.hero-section > * {
+  flex: 1;
+  height: 100%;
+}
+
+.testimonial {
+  width: 600px;
+  height: 138px;
+}
+
+.testimony {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.testifiers-profile {
+  justify-content: start;
+  gap: 1rem;
+}
+
+.testifiers-profile .website {
+  font-size: 0.7rem;
+  margin-top: 7px;
+  color: #475569;
+}
+
+.custom-shape {
+  width: 700px;
+  height: 700px;
+  background-color: #bae6fd;
+  clip-path: path(
+    "M673 0H158.125C21.3126 142.265 -107.666 492.12 140.534 637.976C374.769 775.625 605.087 624.306 673 559.79V0Z"
+  );
+  position: absolute;
+  top: -4.5rem;
+  right: -1.5rem;
+  z-index: -1;
+ /* transform: scale(0.9); */
+}
+
+.hero-image {
+  position: relative;
+}
+
+.custom-shape img {
+  width: 700px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
