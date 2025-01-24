@@ -2,6 +2,7 @@ import Quote from "../Quote/Quote";
 import testifier from "../../assets/testifier.jpg";
 import "./hero.css";
 import contractor from "../../assets/solar-man.png";
+import pattern from "../../assets/pattern.svg";
 
 const Hero = () => {
   return (
@@ -31,6 +32,8 @@ const Hero = () => {
         <div class="custom-shape flexs">
           <img src={contractor} alt="a solar panel contractor image working." />
         </div>
+        <div className="floats orange"></div>
+        <img src={pattern} alt="design pattern" className="floats curve"/>
       </div>
     </section>
   );

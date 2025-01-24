@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 
+
 body {
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .flexs {
@@ -31,6 +30,10 @@ button {
 
 .mobile {
   display: none;
+}
+
+.floats{
+  position: absolute;
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
