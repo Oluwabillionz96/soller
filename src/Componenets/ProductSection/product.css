@@ -1,0 +1,121 @@
+.product {
+  overflow: hidden;
+  position: relative;
+  height: 1122px;
+}
+
+.background {
+  width: 610px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.background:nth-child(1) {
+  background-color: #f59e0b;
+  top: 15rem;
+  left: -20rem;
+}
+
+.background:nth-child(1) .insider {
+  background-color: #fbbf24;
+  top: 10.25rem;
+  right: 4.5rem;
+}
+
+.background:nth-child(2) {
+  background-color: #7e22ce;
+  top: 25rem;
+  right: -15rem;
+}
+
+.background:nth-child(2) .insider {
+  background-color: #a855f7;
+  top: 4.75rem;
+  left: 11.56rem;
+}
+
+.background > .insider {
+  width: 131px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.colored {
+  color: #d97706;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.product h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 8px 0 24px;
+}
+
+.product .details {
+  font-size: 1.25rem;
+  width: 900px;
+  text-align: center;
+  margin: 0 auto 80px;
+}
+
+.dashboard {
+  width: min(1100px, 85%);
+  display: block;
+  margin: 0 auto;
+}
+
+.product {
+  padding: 80px 0 0 0;
+}
+
+@media (max-width: 1024px) {
+  .product {
+    height: 555px;
+  }
+
+  .background {
+    width: 248px;
+  }
+
+  .colored {
+    font-size: 1rem;
+  }
+
+  .product h2 {
+    font-size: 2rem;
+  }
+
+  .product .details {
+    font-size: 0.8rem;
+    width: min(361px, 90%);
+    line-height: 140%;
+    margin: 20px auto 64px;
+  }
+
+  .background > .insider {
+    width: 46px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .background:nth-child(1) {
+    top: 12.5rem;
+    left: -10rem;
+  }
+
+  .background:nth-child(1) .insider {
+    top: 46px;
+    right: 42px;
+  }
+
+  .background:nth-child(2) {
+    top: 279px;
+    right: -7rem;
+    width: 200px;
+  }
+}

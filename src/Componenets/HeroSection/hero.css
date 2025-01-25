@@ -1,0 +1,208 @@
+.custom-shape {
+  width: 673px;
+  height: 694px;
+  background-color: #bae6fd;
+  clip-path: path(
+    "M673 0H158.125C21.3126 142.265 -107.666 492.12 140.534 637.976C374.769 775.625 605.087 624.306 673 559.79V0Z"
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.orange-circle,
+.purple-circle,
+.skyBlue-circle {
+  width: 149px;
+  aspect-ratio: 1;
+  background-color: #f59e0b;
+  border-radius: 50%;
+  position: absolute;
+  top: 131px;
+  right: 590px;
+  opacity: 0.9;
+}
+
+.purple-circle {
+  background-color: #a855f7;
+  width: 74px;
+  right: 34px;
+  top: 252px;
+}
+
+.curve {
+  width: 407px;
+  height: 247px;
+  background-color: #7dd3fc;
+  clip-path: path(
+    "M0.351379 239.671C2.78177 193.604 17.7609 149.079 43.6687 110.911C69.5765 72.7422 105.427 42.3838 147.342 23.1187C189.257 3.85363 235.642 -3.58475 281.48 1.60803C327.317 6.80085 370.862 24.4272 407.406 52.5806L321.616 163.937C305.376 151.426 286.025 143.593 265.656 141.285C245.286 138.978 224.674 142.283 206.047 150.844C187.421 159.405 171.489 172.896 159.976 189.858C148.463 206.819 141.807 226.605 140.727 247.077L0.351379 239.671Z"
+  );
+  position: absolute;
+  top: 572px;
+  right: 189px;
+}
+
+.skyBlue-circle {
+  width: 70px;
+  background-color: #e0f2fe;
+  opacity: 1;
+  top: 660px;
+  right: 190px;
+  z-index: -1;
+}
+
+.details-section {
+  padding: 44px 0 0 80px;
+  width: 680px;
+}
+
+h1 {
+  font-size: 4.4rem;
+  color: #0f172a;
+  line-height: 110%;
+}
+
+.details,
+.testimony {
+  font-size: 1.5rem;
+  line-height: 160%;
+  margin: 24px 0;
+}
+
+.details-section .quote {
+  background-color: #fcd34d;
+  font-size: 1.6rem;
+  width: 306px;
+  height: 64px;
+  font-weight: 550;
+  margin-bottom: 128px;
+}
+
+.testimony,
+.testifier-profile .name {
+  font-size: 18px;
+  margin: 0 0 1rem;
+}
+
+.testifier-profile {
+  justify-content: start;
+  gap: 1rem;
+}
+
+.testifiers-image {
+  width: 64px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.testifier-profile .name {
+  margin: 0 0 3px;
+}
+
+.testifier-profile .website {
+  font-size: 1rem;
+  color: #475569;
+}
+
+.details-section-container > * {
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .custom-shape2 {
+    width: min(78%, 302px);
+    height: 333px;
+    background-color: #bae6fd;
+    clip-path: path(
+      "M308 0H72.8914C10.4187 68.2626 -48.4772 236.132 64.8588 306.118C171.818 372.166 276.989 299.559 308 268.603V0Z"
+    );
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .curve2 {
+    width: 115.47px;
+    height: 67.93px;
+    top: 297px;
+    right: 101.5px;
+    background-color: #7dd3fc;
+    position: absolute;
+    clip-path: path(
+      "M0.0307617 65.964C0.720199 53.2993 4.96939 41.0583 12.3188 30.5651C19.6681 20.0718 29.8379 11.7256 41.7282 6.42925C53.6184 1.13288 66.7766 -0.912098 79.7794 0.515513C92.7823 1.94312 105.135 6.78898 115.501 14.529L91.165 45.1431C86.5583 41.7035 81.069 39.5501 75.2907 38.9157C69.5124 38.2813 63.6651 39.19 58.3813 41.5437C53.0974 43.8973 48.5781 47.6062 45.3122 52.2693C42.0462 56.9323 40.1579 62.372 39.8516 68L0.0307617 65.964Z"
+    );
+  }
+
+  .orange-circle {
+    width: 59.57px;
+    height: 57.74px;
+    top: 81px;
+    right: 65%;
+  }
+
+  .purple-circle {
+    width: 36px;
+    height: 34px;
+    right: 20px;
+    top: 118px;
+  }
+
+  .skyBlue-circle {
+    width: 19.86px;
+    height: 19.24px;
+    top: 320px;
+    right: 101.9px;
+  }
+
+  .details-section-container {
+    flex-direction: column-reverse;
+  }
+
+  .details-section {
+    width: 100%;
+    padding: 48px 1rem 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    /* width: min(90% 391px); */
+  }
+
+  .details,
+  .testimony {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .details-section .quote {
+    font-size: 1.25rem;
+    width: min(80%, 243px);
+    height: 56px;
+    display: block;
+    margin: 0 auto 64px;
+    display: flex;
+  }
+
+  .testimony {
+    text-align: left;
+    margin: 0 auto 1rem;
+  }
+
+  .testifier-profile .name {
+    font-size: 1rem;
+  }
+
+  .testifier-profile .website {
+    font-size: 0.8rem;
+  }
+
+
+  .invisible {
+    width: 100%;
+    height: 250px;
+    visibility: hidden;
+  }
+}

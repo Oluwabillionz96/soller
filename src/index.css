@@ -2,11 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
+html {
+  width: 100vw;
+  position: relative;
+}
 
 body {
-  width: 100vw;
+  width: min(100vw, 1440px);
+  height: 100vh;
 }
 
 .flexs {
@@ -15,33 +21,39 @@ body {
   justify-content: center;
 }
 
-.column {
+.col {
   flex-direction: column;
-}
-
-:root {
-  --nav-color: #0f172a;
-  --nav-size: 1.2rem;
-}
-
-button {
-  border: none;
 }
 
 .mobile {
   display: none;
 }
 
-.floats{
-  position: absolute;
+.quote {
+  width: 12.86rem;
+  height: 3rem;
+  border-radius: 100px;
+  border: none;
+  background-color: #fcd34d;
+  font-size: 1.1rem;
+  gap: 1rem;
+  color: #78350f;
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
-  .desktop {
-    display: none;
-  }
+button {
+  cursor: pointer;
+}
 
+img {
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
   .mobile {
     display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 }
