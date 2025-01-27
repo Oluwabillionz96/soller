@@ -6,7 +6,7 @@ export const Quote = () => {
   return (
     <button className="quote flexs">
       Request a quote
-      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      <i className="fa fa-arrow-right" aria-hidden="true"></i>
     </button>
   );
 };
@@ -23,10 +23,10 @@ const NavBar = () => {
             <a href="#products">Products</a>
           </li>
           <li>
-            <a href="#">Solutions</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="#">Solutions</a>
           </li>
           <li>
             <a href="#">Configure</a>
@@ -40,7 +40,7 @@ const NavBar = () => {
           <Quote />
         </div>
         <button className="mobile">
-          <i class="fa fa-bars" aria-hidden="true"></i>
+          <i className="fa fa-bars" aria-hidden="true"></i>
         </button>
       </nav>
     </header>

@@ -49,13 +49,14 @@
   text-align: center;
 }
 
-.product h2 {
+h2 {
   font-size: 3.5rem;
   text-align: center;
   margin: 8px 0 24px;
 }
 
-.product .details {
+.product .details,
+.services > .text > .details {
   font-size: 1.25rem;
   width: 900px;
   text-align: center;
