@@ -1,5 +1,5 @@
 import services from "../../assets/services.png";
-import "./services.css";
+// import "./services.css";
 import truck from "../../assets/truck.svg";
 import throphy from "../../assets/throphy.svg";
 import man from "../../assets/man.svg";

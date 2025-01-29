@@ -26,7 +26,7 @@ const NavBar = () => {
             <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#">Solutions</a>
+            <a href="#Solutions">Solutions</a>
           </li>
           <li>
             <a href="#">Configure</a>
