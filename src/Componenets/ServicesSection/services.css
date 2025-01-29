@@ -92,6 +92,7 @@
   .services-container h3 {
     font-size: 1.25rem;
     margin: 16px 0;
+    text-align: center;
   }
 
   .services-container .details {
