@@ -21,6 +21,7 @@
   top: 0;
   left: 0;
   z-index: -1;
+  /* display: none; */
 }
 
 .services > * {
@@ -58,4 +59,68 @@
 .services-container h3 {
   font-size: 24px;
   margin: 16px 0;
+}
+
+@media (max-width: 1024px) {
+  .services {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 1.8rem;
+  }
+
+  .services .colored,
+  .services h2,
+  .services .main-text .details {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .services h2 {
+    font-size: 2rem;
+  }
+
+  .services > .text > .details,
+  .services-container {
+    width: min(90%, 362px);
+    margin: 0 auto 64px;
+  }
+
+  .services-container {
+    gap: 3rem;
+  }
+
+  .services-container h3 {
+    font-size: 1.25rem;
+    margin: 16px 0;
+  }
+
+  .services-container .details {
+    font-size: 1rem;
+    line-height: 140%;
+  }
+
+  .services .pattern {
+    width: 21rem;
+    height: 33rem;
+    clip-path: path(
+      "M56.793 494.941C-43.2524 552.703 -171.18 518.424 -228.941 418.379C-286.703 318.334 -252.424 190.406 -152.379 132.645L28.7693 28.0587C128.815 -29.7026 256.742 4.57552 314.504 104.621C372.265 204.666 337.987 332.594 237.941 390.355L56.793 494.941Z"
+    );
+    left: -10rem;
+    top: 55rem;
+  }
+
+  .services-img {
+    width: min(80%, 260px);
+    height: 470px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .services .image {
+    width: 100%;
+  }
+
+  .services > .main-text {
+    padding: 3rem 0 0;
+  }
 }
