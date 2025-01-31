@@ -26,10 +26,10 @@ const NavBar = () => {
             <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#Solutions">Solutions</a>
+            <a href="#configure">Configure</a>
           </li>
           <li>
-            <a href="#">Configure</a>
+            <a href="#">Solutions</a>
           </li>
         </ul>
         <div className="button-container flexs desktop">
