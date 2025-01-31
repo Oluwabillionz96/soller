@@ -1,0 +1,40 @@
+.img img {
+  width: min(100%, 28.125rem);
+}
+
+p.sect {
+  text-align: left;
+}
+
+h2.sect,
+.item h3 {
+  font-size: 3.5rem;
+  color: #0f172a;
+  line-height: 110%;
+  margin: 0.5rem 0 1.5rem;
+  text-align: left;
+}
+
+.brief-description {
+  font-size: 1.25rem;
+  width: min(43.75rem, 100%);
+  line-height: 180%;
+  margin: 0 0 3rem;
+}
+
+.item h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.item p {
+  font-size: 1.125rem;
+  line-height: 160%;
+  color: #0f172a;
+  /* width: min(100%, 20.375rem); */
+}
+
+.description-container .flexs,.description-container {
+  gap: 3rem;
+}
+
