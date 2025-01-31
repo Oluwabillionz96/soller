@@ -56,12 +56,13 @@ img {
     display: block;
   }
 
-  .desktop {
+  .desktop,
+  #desktop {
     display: none;
   }
 
   /* html,
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   } */
 }

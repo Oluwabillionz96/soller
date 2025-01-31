@@ -5,10 +5,9 @@ import "./solution.css";
 import { carousel } from "../carousel";
 import { useState } from "react";
 
-
 const Card = ({ icon, details, testifierImage, name, kwh, main }) => {
   return (
-    <div className="carousel-card" id={main && "carousel-card-main"}>
+    <div className="carousel-card" id={main ? "carousel-card-main" : "desktop"}>
       <img src={icon} alt="icon" />
       <p className="detail">{details}</p>
       <div className="testifier-profile flexs">
@@ -23,9 +22,9 @@ const Card = ({ icon, details, testifierImage, name, kwh, main }) => {
 };
 
 const Solutions = () => {
-    const [next, setNext] = useState(0);
-    const canDisable = next === 0;
-    console.log(canDisable);
+  const [next, setNext] = useState(0);
+  const canDisable = next === 0;
+  console.log(canDisable);
   return (
     <section id="solution">
       <section className="testimony-carousel">
@@ -51,21 +50,21 @@ const Solutions = () => {
             testifierImage={carousel[(next + 1) % carousel.length].image}
             details={carousel[(next + 1) % carousel.length].details}
             name={carousel[(next + 1) % carousel.length].name}
-            kwh={carousel[(next + 1) % carousel.length].keys}
+            kwh={carousel[(next + 1) % carousel.length].kwh}
           />
           <Card
             icon={carousel[(next + 2) % carousel.length].icon}
             testifierImage={carousel[(next + 2) % carousel.length].image}
             details={carousel[(next + 2) % carousel.length].details}
             name={carousel[(next + 2) % carousel.length].name}
-            kwh={carousel[(next + 2) % carousel.length].keys}
+            kwh={carousel[(next + 2) % carousel.length].kwh}
           />
           <Card
             icon={carousel[(next + 3) % carousel.length].icon}
             testifierImage={carousel[(next + 3) % carousel.length].image}
             details={carousel[(next + 3) % carousel.length].details}
             name={carousel[(next + 3) % carousel.length].name}
-            kwh={carousel[(next + 3) % carousel.length].keys}
+            kwh={carousel[(next + 3) % carousel.length].kwh}
           />
         </div>
         <div className="movements flexs">

@@ -20,7 +20,6 @@
 #solution .details {
   width: 50.9rem;
   margin: 0 0 5rem;
-  /* font-size: 1.25rem; */
 }
 
 #solution .quote {
@@ -34,7 +33,6 @@
 }
 
 .carousel-card {
-  /* width: 22.75rem !important; */
   height: 27.7rem;
   background-color: #fff;
   border-radius: 10px;
@@ -89,4 +87,76 @@
 .movements {
   gap: 1.5rem;
   justify-content: start;
+}
+
+@media (max-width: 1024px) {
+  #solution {
+    padding: 3rem 1rem;
+    overflow-x: hidden;
+  }
+
+  #solution .colored,
+  #solution h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  #solution .colored {
+    font-size: 1rem;
+  }
+
+  #solution .details {
+    width: min(22.6rem, 95%);
+    margin: 0 auto 1.5rem;
+    font-size: 1rem;
+  }
+
+  #solution .quote {
+    width: 15.2rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+    position: static;
+    margin: 0 auto 4rem;
+    /* display: block; */
+  }
+
+  #carousel-card-main {
+    height: 27.25rem;
+    min-width: min(22.4rem, 80%);
+    padding: 2rem;
+  }
+
+  .carousel-card .detail,
+  .carousel-card .name {
+    font-size: 1rem;
+    width: min(100%, 18.37rem);
+    margin: 1rem 0;
+  }
+
+  .caurosel-container {
+    gap: 0;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto 4rem;
+  }
+
+  .carousel-card .name {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .carousel-card .kwh {
+    font-size: 0.88rem;
+  }
+
+  .move {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .movements {
+    gap: 1.2rem;
+    justify-content: center;
+  }
 }
