@@ -11,8 +11,11 @@ html {
 }
 
 body {
-  width: min(100vw, 1440px);
+  width: min(100vw);
   height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .flexs {
@@ -56,4 +59,9 @@ img {
   .desktop {
     display: none;
   }
+
+  /* html,
+  body {
+    overflow-x: hidden;
+  } */
 }

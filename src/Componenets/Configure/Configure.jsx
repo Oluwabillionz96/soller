@@ -13,7 +13,8 @@ const Configure = () => {
           items={itemB}
         />
       </div>
-      <div>
+      <div className="img-container">
+        <div className="pattern"></div>
         <Image src={configure} />
       </div>
     </section>

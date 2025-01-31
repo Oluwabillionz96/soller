@@ -1,4 +1,71 @@
-#services ,#configure{
+#services,
+#configure {
   padding: 5rem;
-  gap: 10rem;
+  gap: 8rem;
+}
+
+.img-container {
+  position: relative;
+}
+
+.pattern {
+  width: 35.8rem;
+  height: 65.5rem;
+  z-index: -1;
+  position: absolute;
+}
+
+#services .pattern {
+  background-color: #581c87;
+  clip-path: path(
+    "M26.4102 946.477C-164.907 1056.93 -409.543 991.384 -520 800.067C-630.457 608.75 -564.907 364.114 -373.59 253.657L-27.1796 53.6566C164.137 -56.8003 408.774 8.74977 519.231 200.067C629.688 391.384 564.137 636.02 372.82 746.477L26.4102 946.477Z"
+  );
+  left: -5rem;
+  top: -2rem;
+}
+
+#configure .pattern {
+  background-color: #fbbf24;
+  clip-path: path(
+    "M546.82 53.6569C738.137 -56.8001 982.774 8.75002 1093.23 200.067C1203.69 391.384 1138.14 636.02 946.82 746.477L600.41 946.477C409.093 1056.93 164.457 991.384 53.9999 800.067C-56.4571 608.75 9.09303 364.114 200.41 253.657L546.82 53.6569Z"
+  );
+  right: -4rem;
+  top: -5rem;
+  /* display: none; */
+}
+
+@media (max-width: 1024px) {
+  #services,
+  #configure {
+    flex-direction: column-reverse;
+    padding: 3rem 1rem;
+    gap: 4rem;
+  }
+
+  #configure {
+    flex-direction: column;
+  }
+
+  .pattern {
+    width: 21.44rem;
+    height: 31.69rem;
+  }
+
+  #services .pattern {
+    clip-path: path(
+      "M56.793 494.941C-43.2524 552.703 -171.18 518.424 -228.941 418.379C-286.703 318.334 -252.424 190.406 -152.379 132.645L28.7693 28.0587C128.815 -29.7026 256.742 4.57552 314.504 104.621C372.265 204.666 337.987 332.594 237.941 390.355L56.793 494.941Z"
+    );
+    left: -3rem;
+    top: -2rem;
+  }
+
+  #configure .pattern {
+  background-color: #fbbf24;
+  clip-path: path(
+    "M313.793 495.37C213.748 553.131 85.8199 518.853 28.0587 418.808C-29.7026 318.762 4.57552 190.835 104.621 133.073L285.769 28.4874C385.815 -29.2739 513.742 5.00423 571.504 105.05C629.265 205.095 594.987 333.023 494.941 390.784L313.793 495.37Z"
+  );
+  right: -3rem;
+  top: 0rem;
+}
+
 }

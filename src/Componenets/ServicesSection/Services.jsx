@@ -6,8 +6,9 @@ import "./services.css";
 const Services = () => {
   return (
     <section className="flexs" id="services">
-      <div>
+      <div className="img-container">
         <Image src={services} />
+        <div className="pattern"></div>
       </div>
       <div>
         <Description

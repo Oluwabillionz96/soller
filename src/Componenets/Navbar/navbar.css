@@ -5,7 +5,9 @@ header.flexs {
 }
 
 header.flexs > nav.flexs {
-  gap: 23.75rem;
+  /* gap: 23.75rem; */
+  width: 100%;
+  justify-content: space-between;
 }
 
 header.flexs ul.flexs {
@@ -50,5 +52,15 @@ button.mobile {
   header.flexs {
     justify-content: space-between;
     padding: 0.65rem 1rem;
+  }
+
+  header.flexs > nav.flexs {
+    /* gap: 23.75rem; */
+    width: fit-content;
+    /* justify-content: space-between; */
+  }
+
+  html {
+    overflow-x: hidden;
   }
 }
