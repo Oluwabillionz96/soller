@@ -38,7 +38,6 @@ h2.sect,
   gap: 3rem;
 }
 
-
 @media (max-width: 1024px) {
   p.sect {
     text-align: center;
@@ -67,6 +66,11 @@ h2.sect,
     font-size: 1rem;
     line-height: 140%;
     text-align: center;
+  }
+
+  .item img {
+    display: block;
+    margin: 0 auto;
   }
 
   .img {
