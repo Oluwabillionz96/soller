@@ -79,8 +79,8 @@ const Solutions = () => {
           <button className="move" onClick={() => setNext((n) => n + 1)}>
             <i className="fa fa-arrow-right" aria-hidden="true"></i>
           </button>
-          {/* <div className="pattern-circle"></div>
-          <div className="pattern-ellipse"></div> */}
+          <div className="pattern-circle"></div>
+          <div className="pattern-ellipse"></div>
         </div>
       </section>
       {/* <Section2 /> */}

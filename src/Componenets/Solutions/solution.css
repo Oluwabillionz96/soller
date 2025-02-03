@@ -113,7 +113,73 @@
 }
 
 @media (max-width: 1024px) {
-  #solution {
+  .testimony-carousel {
+    padding: 3rem 1rem;
+    position: relative;
+    z-index: -4;
+  }
+
+  #solution .colored,
+  #solution h2 {
+    text-align: center;
+    margin: 0.5rem 1rem 1.5rem;
+    font-size: 2rem;
+    width: 100%;
+    /* z-index: 300; */
+  }
+
+  #solution .colored {
+    font-size: 1rem;
+  }
+
+  #solution .details {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+    font-size: 1rem;
+  }
+
+  #solution .quote {
+    width: 15.1rem;
+    height: 3.5rem;
+    font-size: 1.25rem;
+    position: static;
+    margin: 0 auto 4rem;
+  }
+
+  .carousel-card {
+    height: 22.25rem;
+    background-color: #fff;
+    min-width: 22.56rem;
+    z-index: 1;
+  }
+
+  .caurosel-container {
+    gap: 0;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    margin: 0 0 4rem;
+  }
+
+  .movements {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .pattern-circle {
+    width: 7rem;
+    top: 18.5rem;
+    right: 3rem;
+    z-index: -1;
+  }
+
+  .pattern-ellipse {
+    width: 9.8rem;
+    height: 14rem;
+    top: 50rem;
+  }
+
+  /* #solution {
     padding: 3rem 1rem;
     overflow-x: hidden;
   }
@@ -140,7 +206,7 @@
     font-size: 1.25rem;
     position: static;
     margin: 0 auto 4rem;
-    /* display: block; */
+    display: block;
   }
 
   #carousel-card-main {
@@ -201,5 +267,5 @@
     top: 39rem;
     right: -3rem;
     display: none;
-  }
+  } */
 }
