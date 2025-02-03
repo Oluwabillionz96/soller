@@ -2,10 +2,10 @@ import logo from "../../assets/logo.svg";
 import headPhone from "../../assets/headPhone.svg";
 import "./navbar.css";
 
-export const Quote = () => {
+export const Quote = ({ inside = " Request a quote" }) => {
   return (
     <button className="quote flexs">
-      Request a quote
+      {inside}
       <i className="fa fa-arrow-right" aria-hidden="true"></i>
     </button>
   );

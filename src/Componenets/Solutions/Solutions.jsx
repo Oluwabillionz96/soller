@@ -4,6 +4,7 @@ import jane from "../../assets/jane.png";
 import "./solution.css";
 import { carousel } from "../carousel";
 import { useState } from "react";
+import Section2 from "./Section2";
 
 const Card = ({ icon, details, testifierImage, name, kwh, main }) => {
   return (
@@ -78,9 +79,11 @@ const Solutions = () => {
           <button className="move" onClick={() => setNext((n) => n + 1)}>
             <i className="fa fa-arrow-right" aria-hidden="true"></i>
           </button>
+          <div className="pattern-circle"></div>
+          <div className="pattern-ellipse"></div>
         </div>
       </section>
-      <section></section>
+      <Section2 />
       <section></section>
     </section>
   );

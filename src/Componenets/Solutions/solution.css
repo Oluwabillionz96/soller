@@ -1,4 +1,4 @@
-#solution {
+.testimony-carousel {
   padding: 5rem;
   position: relative;
   background-color: rgba(88, 28, 135, 1);
@@ -30,6 +30,7 @@
   position: absolute;
   top: 7.5rem;
   right: 5rem;
+  z-index: 1;
 }
 
 .carousel-card {
@@ -38,6 +39,7 @@
   border-radius: 10px;
   padding: 2rem;
   min-width: 23.75rem;
+  z-index: 1;
 }
 
 .carousel-card .detail,
@@ -87,6 +89,27 @@
 .movements {
   gap: 1.5rem;
   justify-content: start;
+}
+
+.pattern-circle {
+  width: 13.7rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #6b21a8;
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+}
+
+.pattern-ellipse {
+  width: 15.9rem;
+  height: 23rem;
+  background-color: #38bdf8;
+  clip-path: ellipse();
+  transform: rotate(135deg);
+  position: absolute;
+  top: 39rem;
+  right: -3rem;
 }
 
 @media (max-width: 1024px) {
@@ -158,5 +181,23 @@
   .movements {
     gap: 1.2rem;
     justify-content: center;
+  }
+
+  .pattern-circle {
+    width: 7rem;
+    top: 1rem;
+    right: 3rem;
+  }
+
+  .pattern-ellipse {
+    width: 9.9rem;
+    height: 14rem;
+    background-color: #38bdf8;
+    clip-path: ellipse();
+    transform: rotate(135deg);
+    position: absolute;
+    top: 39rem;
+    right: -3rem;
+    display: none;
   }
 }
