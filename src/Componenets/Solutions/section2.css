@@ -1,0 +1,101 @@
+.section2 > * {
+  flex: 1;
+}
+
+.absolution {
+  position: relative;
+  height: 100%;
+}
+
+.section2 {
+  padding: 5rem;
+  height: 44rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.section2 h2 {
+  font-size: 3.5rem;
+  line-height: 110%;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.section2 .detail {
+  font-size: 1.25rem;
+  line-height: 180%;
+  margin: 0 0 1.5rem;
+}
+
+#text .quote {
+  position: static;
+  background-color: transparent;
+  justify-content: start;
+}
+
+.absolution .happyMan {
+  width: 11.875rem;
+  top: 5rem;
+  left: 6.06rem;
+}
+
+.absolution .happyWoman {
+  width: 15.125rem;
+  top: 19.625rem;
+  left: 2.375rem;
+}
+
+.absolution .sunWoman {
+  width: 13.57rem;
+  top: 13.625rem;
+  left: 19.1875rem;
+}
+
+.absolution img {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+.ball1,
+.ball2 {
+  width: 4.6rem;
+  background-color: #06b6d4;
+  top: 5.75rem;
+  left: 21.3rem;
+}
+
+.ball2 {
+  background-color: #ef4444;
+  top: 14.5rem;
+  left: 0;
+}
+
+.ball3 {
+  width: 5.75rem;
+  background-color: #65a30d;
+  top: 28.4rem;
+  left: 17.9rem;
+}
+
+.ball4 {
+  width: 2.3rem;
+  background-color: #c084fc;
+  top: 36.5rem;
+  left: 7.25rem;
+}
+
+.absolution .balls {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.big-ball {
+  width: 39rem;
+  aspect-ratio: 1;
+  background-color: #fef3c7;
+  border-radius: 50%;
+  position: absolute;
+  right: -3.3125rem;
+  top: 29.3125rem;
+  z-index: -1;
+}

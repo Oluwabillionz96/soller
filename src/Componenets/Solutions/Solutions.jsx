@@ -5,6 +5,7 @@ import "./solution.css";
 import { carousel } from "../carousel";
 import { useState } from "react";
 import Section2 from "./Section2";
+import Section3 from "./Section3";
 
 const Card = ({ icon, details, testifierImage, name, kwh, main }) => {
   return (
@@ -25,7 +26,6 @@ const Card = ({ icon, details, testifierImage, name, kwh, main }) => {
 const Solutions = () => {
   const [next, setNext] = useState(0);
   const canDisable = next === 0;
-  console.log(canDisable);
   return (
     <section id="solution">
       <section className="testimony-carousel">
@@ -83,8 +83,8 @@ const Solutions = () => {
           <div className="pattern-ellipse"></div>
         </div>
       </section>
-      {/* <Section2 /> */}
-      <section></section>
+      <Section2 />
+      <Section3 />
     </section>
   );
 };
