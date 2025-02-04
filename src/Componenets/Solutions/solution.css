@@ -7,7 +7,7 @@
 }
 
 #solution .colored,
-#solution h2 {
+#solution .h2 {
   text-align: left;
   margin: 0.5rem 0 1.5rem;
 }
@@ -120,12 +120,11 @@
   }
 
   #solution .colored,
-  #solution h2 {
+  #solution .h2 {
     text-align: center;
     margin: 0.5rem 1rem 1.5rem;
     font-size: 2rem;
     width: 100%;
-    /* z-index: 300; */
   }
 
   #solution .colored {

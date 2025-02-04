@@ -30,7 +30,7 @@ const Solutions = () => {
     <section id="solution">
       <section className="testimony-carousel">
         <p className="colored">Join other Sun harvesters</p>
-        <h2>Make something awesome</h2>
+        <h2 className="h2">Make something awesome</h2>
         <p className="details">
           Dui euismod iaculis libero, aliquet vitae et elementum porttitor.
           Eleifend mi tristique condimentum congue fusce nunc, donec magnis
