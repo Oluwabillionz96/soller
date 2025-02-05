@@ -1,0 +1,121 @@
+#conclusion {
+  background-color: rgba(126, 34, 206, 0.873);
+  padding: 5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
+}
+
+#conclusion .colored {
+  font-size: 1.25rem;
+  line-height: 110%;
+}
+
+#conclusion h2 {
+  font-size: 3.5rem;
+  width: 55.9rem;
+  text-align: left;
+  color: white;
+  line-height: 110%;
+  margin: 1rem 0 5rem;
+}
+
+#conclusion .abs {
+  width: 19.125rem;
+  position: absolute;
+  height: 9.3rem;
+  top: 5rem;
+  padding-top: 2.5rem;
+  right: 5rem;
+  z-index: 50;
+}
+
+#conclusion .abs .quote {
+  position: static;
+  margin-bottom: 1rem;
+}
+
+#conclusion .abs p {
+  text-align: center;
+  color: #78350f;
+}
+
+#conclusion .conclusion-img {
+  width: 63rem;
+  display: block;
+  margin: 0 auto;
+}
+
+#conclusion .circle1 {
+  width: 49rem;
+  background-color: #f59e0b;
+  top: -20rem;
+  right: -12rem;
+  z-index: -1;
+}
+
+#conclusion .circle2 {
+  width: 32rem;
+  background-color: #a855f7;
+  top: 46rem;
+  left: 3.25rem;
+  z-index: -1;
+}
+
+#conclusion .circle3 {
+  width: 16rem;
+  background-color: #38bdf8;
+  height: 23rem;
+  top: 53rem;
+  right: -8rem;
+}
+
+.circles {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@media (max-width: 1024px) {
+  #conclusion {
+    padding: 3rem 1.1rem;
+  }
+
+  #conclusion .colored {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #conclusion h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0 1.5rem;
+  }
+
+  #conclusion .abs {
+    width: 100%;
+    position: static;
+    height: 5.7rem;
+    padding-top: 0;
+    margin-bottom: 4rem;
+  }
+
+  #conclusion .abs p {
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  #conclusion .conclusion-img {
+    width: min(20rem, 100%);
+    display: block;
+    margin: 0 auto;
+  }
+
+  #conclusion .circle2 {
+    width: 22rem;
+    top: 75%;
+    left: -9rem;
+    z-index: -1;
+  }
+}
