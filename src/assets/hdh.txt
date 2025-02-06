@@ -1,0 +1,5 @@
+<svg width="647" height="1499" viewBox="0 0 647 1499" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:difference" opacity="0.5">
+<path fill-rule="evenodd" clip-rule="evenodd" d= fill="#6B21A8"/>
+</g>
+</svg>

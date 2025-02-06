@@ -1,0 +1,29 @@
+.foot {
+  justify-content: space-between;
+  padding: 0 5rem;
+  height: 5.8rem;
+}
+
+.foot div {
+  height: 100%;
+}
+
+.foot div:nth-child(1) {
+  gap: 1.5rem;
+}
+
+.foot img {
+  width: 7.9rem;
+  height: 2rem;
+}
+
+.foot .copy-right {
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.foot div:nth-child(2) {
+  gap: 1.5rem;
+  font-size: 1rem;
+  color: #0f172a;
+}

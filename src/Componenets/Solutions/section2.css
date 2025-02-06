@@ -18,6 +18,7 @@
   font-size: 3.5rem;
   line-height: 110%;
   margin: 0.5rem 0 1.5rem;
+  text-align: left;
 }
 
 .section2 .detail {
@@ -95,7 +96,7 @@
   background-color: #fef3c7;
   border-radius: 50%;
   position: absolute;
-  right: -3.3125rem;
+  right: -5.3125rem;
   top: 29.3125rem;
   z-index: -1;
 }

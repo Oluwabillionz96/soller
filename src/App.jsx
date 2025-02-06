@@ -1,4 +1,5 @@
 import Configure from "./Componenets/Configure/Configure";
+import Footer from "./Componenets/Footer/Footer";
 import Hero from "./Componenets/HeroSection/Hero";
 import NavBar from "./Componenets/Navbar/NavBar";
 import Product from "./Componenets/ProductSection/Product";
@@ -13,6 +14,7 @@ const App = () => {
       <Services />
       <Configure />
       <Solutions />
+      <Footer />
     </>
   );
 };

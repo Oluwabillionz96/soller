@@ -85,6 +85,7 @@ const Solutions = () => {
       </section>
       <Section2 />
       <Section3 />
+      <div className="irregular-pattern desktop"></div>
     </section>
   );
 };
