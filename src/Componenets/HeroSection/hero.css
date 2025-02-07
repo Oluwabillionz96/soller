@@ -1,7 +1,7 @@
 .custom-shape {
   width: 673px;
   height: 694px;
-  background-color: #bae6fd;
+  background-color: var(--irregular-shape);
   clip-path: path(
     "M673 0H158.125C21.3126 142.265 -107.666 492.12 140.534 637.976C374.769 775.625 605.087 624.306 673 559.79V0Z"
   );
@@ -11,12 +11,17 @@
   z-index: -1;
 }
 
+.custom-shape img {
+  width: 100%;
+  height: 100%;
+}
+
 .orange-circle,
 .purple-circle,
 .skyBlue-circle {
   width: 149px;
   aspect-ratio: 1;
-  background-color: #f59e0b;
+  background-color: var(--orange-color);
   border-radius: 50%;
   position: absolute;
   top: 131px;
@@ -59,7 +64,7 @@
 
 h1 {
   font-size: 4.4rem;
-  color: #0f172a;
+  color: var(--text-colo);
   line-height: 110%;
 }
 
@@ -71,7 +76,7 @@ h1 {
 }
 
 .details-section .quote {
-  background-color: #fcd34d;
+  background-color: var(--primary-button-color);
   font-size: 1.6rem;
   width: 306px;
   height: 64px;
@@ -113,7 +118,7 @@ h1 {
   .custom-shape2 {
     width: min(78%, 302px);
     height: 333px;
-    background-color: #bae6fd;
+    background-color: var(--irregular-shape);
     clip-path: path(
       "M308 0H72.8914C10.4187 68.2626 -48.4772 236.132 64.8588 306.118C171.818 372.166 276.989 299.559 308 268.603V0Z"
     );
@@ -121,6 +126,13 @@ h1 {
     top: 0;
     right: 0;
     z-index: -1;
+  }
+
+  .custom-shape2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -1rem;
   }
 
   .curve2 {
@@ -143,9 +155,9 @@ h1 {
   }
 
   .purple-circle {
-    width: 36px;
-    height: 34px;
-    right: 20px;
+    width: 20px;
+    height: 20px;
+    right: 15px;
     top: 118px;
   }
 
@@ -168,7 +180,6 @@ h1 {
   h1 {
     font-size: 2rem;
     text-align: center;
-    /* width: min(90% 391px); */
   }
 
   .details,
@@ -198,7 +209,6 @@ h1 {
   .testifier-profile .website {
     font-size: 0.8rem;
   }
-
 
   .invisible {
     width: 100%;

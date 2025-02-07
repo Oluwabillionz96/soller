@@ -1,6 +1,8 @@
 import logo from "../../assets/logo.svg";
 import headPhone from "../../assets/headPhone.svg";
 import "./navbar.css";
+import MobileNav from "./MobileNav";
+import { useState } from "react";
 
 export const Quote = ({ inside = " Request a quote" }) => {
   return (
@@ -11,39 +13,62 @@ export const Quote = ({ inside = " Request a quote" }) => {
   );
 };
 
-const NavBar = () => {
+export function Links({ className }) {
   return (
-    <header className="flexs main-header">
-      <div className="logo">
-        <img src={logo} alt="Soller's logo" />
-      </div>
-      <nav className="flexs">
-        <ul className="flexs desktop">
-          <li>
-            <a href="#products">Products</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#configure">Configure</a>
-          </li>
-          <li>
-            <a href="#">Solutions</a>
-          </li>
-        </ul>
-        <div className="button-container flexs desktop">
-          <button className="flexs">
-            <img src={headPhone} alt="Head phone icon" />
-            555 818 282
-          </button>
-          <Quote />
+    <ul className={`flexs ${className}`}>
+      <li>
+        <a href="#products">Products</a>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+      <li>
+        <a href="#configure">Configure</a>
+      </li>
+      <li>
+        <a href="#solution">Solutions</a>
+      </li>
+    </ul>
+  );
+}
+
+const NavBar = () => {
+  const [isMobileNav, setIsmobileNav] = useState(false);
+  return (
+    <>
+      <header className="flexs main-header">
+        <div className="logo">
+          <img src={logo} alt="Soller's logo" />
         </div>
-        <button className="mobile">
-          <i className="fa fa-bars" aria-hidden="true"></i>
-        </button>
-      </nav>
-    </header>
+        <nav className="flexs">
+          <Links className="desktop" />
+          <div className="button-container flexs desktop">
+            <button className="flexs">
+              <img src={headPhone} alt="Head phone icon" />
+              555 818 282
+            </button>
+            <Quote />
+          </div>
+          <button
+            className="mobile mobile-btn"
+            onClick={() => setIsmobileNav(!isMobileNav)}
+          >
+            {isMobileNav ? (
+              <i className="fa fa-x" aria-hidden="true"></i>
+            ) : (
+              <i className="fa fa-bars" aria-hidden="true"></i>
+            )}
+          </button>
+          {isMobileNav && (
+            <MobileNav
+              handleClick={() => {
+                setIsmobileNav(false);
+              }}
+            />
+          )}
+        </nav>
+      </header>
+    </>
   );
 };
 

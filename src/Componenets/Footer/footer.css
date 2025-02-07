@@ -19,13 +19,13 @@
 
 .foot .copy-right {
   font-size: 1rem;
-  color: #0f172a;
+  color: var(--text-color);
 }
 
 .foot div:nth-child(2) {
   gap: 1.5rem;
   font-size: 1rem;
-  color: #0f172a;
+  color: var(--text-color);
 }
 
 @media (max-width: 1024px) {
@@ -40,9 +40,4 @@
     flex-direction: column;
     padding: 1.5rem 0;
   }
-  .foot .copy-right {
-    font-size: 1rem;
-    color: #0f172a;
-  }
-
 }

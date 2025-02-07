@@ -1,6 +1,7 @@
 import { Quote } from "../Navbar/NavBar";
 import "./hero.css";
 import testifier from "../../assets/testifier.jpg";
+import solarMan from "../../assets/solar-man-desktop.png";
 
 const Hero = () => {
   return (
@@ -34,8 +35,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="details-section">
-          <div className="custom-shape desktop"></div>
-          <div className="custom-shape2 mobile"></div>
+          <div className="custom-shape desktop">
+            <img src={solarMan} alt="a man fixing solar" />
+          </div>
+          <div className="custom-shape2 mobile">
+            <img src={solarMan} alt="a man fixing solar" />
+          </div>
           <div className="orange-circle"></div>
           <div className="purple-circle"></div>
           <div className="curve desktop"></div>

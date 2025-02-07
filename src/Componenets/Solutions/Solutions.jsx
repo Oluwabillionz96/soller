@@ -37,7 +37,7 @@ const Solutions = () => {
           commodo.
         </p>
         <Quote />
-        <div className="caurosel-container flexs">
+        <div className="carousel-container flexs">
           <Card
             icon={carousel[next % carousel.length].icon}
             testifierImage={carousel[next % carousel.length].image}
@@ -71,12 +71,17 @@ const Solutions = () => {
         <div className="movements flexs">
           <button
             className="move"
-            onClick={() => setNext((n) => n - 1)}
+            onClick={() => setNext(next - 1)}
             disabled={canDisable}
           >
             <i className="fa fa-arrow-left" aria-hidden="true"></i>
           </button>
-          <button className="move" onClick={() => setNext((n) => n + 1)}>
+          <button
+            className="move"
+            onClick={() => {
+              setNext(next + 1);
+            }}
+          >
             <i className="fa fa-arrow-right" aria-hidden="true"></i>
           </button>
           <div className="pattern-circle"></div>

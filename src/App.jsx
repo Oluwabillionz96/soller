@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Configure from "./Componenets/Configure/Configure";
 import Footer from "./Componenets/Footer/Footer";
 import Hero from "./Componenets/HeroSection/Hero";

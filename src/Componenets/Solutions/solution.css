@@ -10,8 +10,6 @@
   position: relative;
 }
 
-
-
 #solution .colored,
 #solution .h2 {
   text-align: left;
@@ -50,7 +48,7 @@
 
 .carousel-card .detail,
 .carousel-card .name {
-  color: #0f172a;
+  color: var(--text-color);
   font-size: 1.125rem;
   width: min(100%, 18.75rem);
   line-height: 160%;
@@ -75,7 +73,7 @@
   color: #475569;
 }
 
-.caurosel-container {
+.carousel-container {
   gap: 1.5rem;
   position: relative;
   padding: 0 0 0 11rem;
@@ -134,7 +132,7 @@
   .testimony-carousel {
     padding: 3rem 1rem;
     position: relative;
-    z-index: -4;
+    /*z-index: -4;*/
   }
 
   #solution .colored,
@@ -166,11 +164,11 @@
   .carousel-card {
     height: 22.25rem;
     background-color: #fff;
-    min-width: 22.56rem;
+    min-width: 19rem;
     z-index: 1;
   }
 
-  .caurosel-container {
+  .carousel-container {
     gap: 0;
     position: relative;
     padding: 0;
@@ -181,6 +179,7 @@
   .movements {
     gap: 1.5rem;
     justify-content: center;
+    z-index: 300;
   }
 
   .pattern-circle {
